@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    background: transparent;
+    transition: 0.3s ease;
+    z-index: 1000;
+}
+
+/* Navbar on scroll */
+#navbar.scrolled {
+    background-color: #111;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+/* Links */
+.nav-menu li a {
+    margin: 0 18px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Hover effect */
+.nav-menu li a:hover {
+    color: #00ffd5;
+}
+
+/* Content */
+.content {
+    height: 200vh;
+    padding-top: 120px;
+    text-align: center;
+    background: linear-gradient(#222, #555);
+    color: white;
+}
